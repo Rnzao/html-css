@@ -1,0 +1,48 @@
+body {
+    font: normal 16px Arial, Helvetica, sans-serif; 
+    background-color: #FF70D2;
+}
+
+
+header {
+    background-color: #9C6CF5;
+    padding-left: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 3px;
+    font-weight: bold;
+}
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: #DC72E8;
+    padding:3px;
+    margin:5px;
+}
+
+footer {
+    background-color: #F56C85;
+    text-align: center;
+    padding: 2px;
+    margin:4px;
+    box-shadow: 5px 3px 7px 1px black;
+    
+}
+
+footer > p {
+    margin:0px;
+}
+
+aside > a {
+    text-decoration: none;
+}
+aside > a:hover {
+    text-decoration: underline;
+}
+aside >a:active {
+    color: wheat;
+}

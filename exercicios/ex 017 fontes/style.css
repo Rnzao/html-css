@@ -1,0 +1,19 @@
+body{ 
+
+ 
+/* style, weight, size,family 
+
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold; 
+ */
+
+width: 80em;
+font: italic bold 16px  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+ 

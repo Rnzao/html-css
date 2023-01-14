@@ -1,0 +1,11 @@
+div:hover {
+    color: yellow;
+}
+
+div > iframe {
+    display: none;
+}
+
+div:hover > iframe {
+    display: block;
+}

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: idroid;
+    src: url(fontes/./idroid.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+* {
+    margin:0px
+}
+
+:root {
+    --fontdroid: 'idroid';
+    --colorfundo: #6EE15A;
+    --colorheader:#147A15;
+    --colortitulo:#23fa278e;
+    
+
+
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    
+    background-color: var(--colorfundo);
+}
+header{
+    font-family: var(--fontpadrão);
+    background-color: var(--colorheader);
+    text-align: center;
+    
+}
+
+header > h1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    
+    
+
+}
+
+
+nav {
+    background-color: var(--colorheader);
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding-left: 1em;
+    text-align: justify;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.991);
+    margin-bottom: 30px;
+    
+}
+
+main img {
+    width: 100%;
+}
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+h1,h2 {
+    font-family: var(--fontdroid);
+    
+}
+
+
+ul {
+    display:;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
