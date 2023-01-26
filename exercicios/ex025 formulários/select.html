@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> teste</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Coisas</legend>
+            <div>
+                <label for="icoisas">Coisas</label>
+                <select name="coisas" id="icoisas" required>
+                    <optgroup label="Lugares">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="BH">Belo Horizonte</option>
+                        <option value="BA">Bahia</option>
+                        <option value="FR">Fortaleza</option>
+                    </optgroup>
+                    <optgroup label="Pika">
+                        <option value="Rnz">Renan</option>
+                        <option value="J">Bruno</option>
+                        <option value="Verri">Gabriel</option>
+                        <option value="Careca">Luiz</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="imsg">Escreva aqui sua msg</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+            
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof" required>
+                <datalist id="lstprof">
+                    <option value="ADM">Administrador</option>
+                    <option value="UFC">Lutador</option>
+                    <option value="FUT">Jogador de Futebol</option>
+                    <option value="MEC">Mecânico</option>
+                    <option value="HEAL">Médico</option>
+                </datalist>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
