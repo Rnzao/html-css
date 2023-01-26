@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div {
+            
+            margin-top: 10px;
+        }
+      
+        fieldset {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Por favor preencha os dados apresentados a baixo</h1>
+    <form method="post" autocomplete="on" action="cadastro.php">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="iname">Nome:</label>
+                <input type="text" name="nome" id="iname" required minlength="18" maxlength="30" placeholder="Nome completo" size="30" autocomplete="username">
+
+            </div>
+
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email" >
+            </div>
+            
+
+            <div>
+                <label for="ipass">Senha:</label>
+                <input type="password" name="senha" id="ipass" required minlength="8" autocomplete="current-password">
+            </div>
+
+            <div>
+                <label for="idate">Data:</label>
+                <input type="date" name="data" id="idate" value="2023-01-26" required>
+
+            </div>
+
+            <div>
+                <label for="inum">Numero:</label>
+                <input type="tel" name="telefone" id="inum" required autocomplete="tel-national">
+            </div>
+
+            <div >
+              <legend >Sexo:</legend>
+
+                <input type="radio" name="sex" id="imasc" value="M"> 
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sex" id="ifem" value="F"> 
+                <label for="ifem">Feminino</label>
+
+
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Esportes</legend>
+
+            <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
+            <input type="checkbox" name="thai" id="ithai"> <label for="ithai">Muay Thai</label>
+            <input type="checkbox" name="jiu" id="ijiu"> <label="ijiu">Jiu-jitsu</label>
+            <input type="checkbox" name="fut" id="ifut" checked > <label for="ifut">Futebol</label>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+       
+
+    </form>
+
+
+
+    
+</body>
+</html>
