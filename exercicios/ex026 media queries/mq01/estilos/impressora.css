@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+ul {
+    display: none;
+}
+
+html,body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.5em;
+    list-style-position: inside;
+}
+
+article::after {
+    content: 'Esse site foi impresso no dia 27/01/2023 as 10:50';
+}
