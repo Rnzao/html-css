@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario com output</h1>
+
+    <form action="cadastro.php">
+
+        <div>
+            <label for="inum1">Numero 1:</label>
+            <input type="number" name="num1" id="inum1" required min="0" max="50"
+            oninput="isoma.innerHTML= Number(inum1.value) + Number (inum2.value)" >
+        </div>
+
+        <div>
+            <label for="inum2">Numero 2:</label>
+            <input type="number" name="num2" id="inum2" required min="0" max="50"
+            oninput="isoma.innerHTML= Number(inum1.value) + Number (inum2.value)">
+        </div>
+
+        <div>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+
+
+
+
+    </form>
+
+
+
+</body>
+</html>
