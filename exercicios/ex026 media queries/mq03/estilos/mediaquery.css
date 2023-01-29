@@ -2,4 +2,55 @@
 
 /* Todas as mídias */
 
+@media print {
+    #phone {
+        display: none;
+    }
+    #print {
+        display: block;
+    }
+}
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px)  { 
+    
+    body{
+        background-image: url(../img/back-tablet.jpg);
+    }
 
+    #phone {
+        display: none;
+    }
+    #tablet {
+        display: block;
+    }
+}
+
+
+/* computador */
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+
+    body{
+         background-image: url(../img/back-pc.jpg);
+    }
+    #phone {
+        display: none;
+    }
+    #pc {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    #phone{
+        display:none;
+        }
+    
+        #tv {
+        display:block;
+        }
+}
